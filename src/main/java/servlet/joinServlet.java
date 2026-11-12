@@ -73,6 +73,16 @@ public class joinServlet extends HttpServlet {
 			 
 			if(result == 1) {
 				System.out.println("회원 가입 성공!!");
+				request.setAttribute("uid", userid);
+				request.setAttribute("upw", userpw);
+				request.setAttribute("uname", uname);
+				
+				//response.sendRedirect("joinSuccess.jsp");
+				//request객체가 joinSucccess.jsp 전달이 안됨
+				//전달하는 값이 필요없이 다른 페이지로 이동하는 방법
+				
+				request.getRequestDispatcher("joinSuccess.jsp").forward(request, response);
+				//서블릿이 현재 가지고 있는 request객체와 response객체를 같이 joinSuccess.jsp로 보냄
 			} else {
 				System.out.println("회원 가입 실패!!");
 			}
