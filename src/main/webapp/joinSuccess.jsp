@@ -12,6 +12,8 @@
 	아이디 : ${uid }<br>
 	비밀번호 : ${upw }<br>
 	이름 : ${uname }<br>
+	<hr>
+	<a href="login.do">로그인 페이지로 이동</a>
 	
 </body>
 </html>

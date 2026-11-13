@@ -14,5 +14,7 @@
 		비밀번호 : <input type="text" name="mpw"><br><br>
 		<input type="submit" value="로그인">
 	</form>
+	<hr>
+	<a href="join.do">회원가입</a>
 </body>
 </html>
